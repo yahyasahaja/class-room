@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/font.css" />
+    <link rel="stylesheet" type="text/css" href="./dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="./default.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <div class="container header__wrapper">
+        <div class="header__logo">
+          <img src="./assets/logo.png" />
+        </div>
+
+        <div class="flex">
+          <div class="menu">
+            <a href="./courses" class="menu__item">My Courses</a>
+            <a href="./resources" class="menu__item">My Resources</a>
+            <a href="./community" class="menu__item">Community</a>
+          </div>
+          <div class="flex items-center">
+            <div class="relative">
+              <input
+                class="search__input"
+                type="search"
+                placeholder="Search for a course"
+              />
+              <span class="search__icon"></span>
+            </div>
+          </div>
+
+          <div class="flex items-center account__button">
+            <div class="account__button__wrapper">
+              <span class="account__button__image">
+                <img alt="Profile" src="./assets/profile-picture.png" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="dashboard">
+      <div class="dashboard__wrapper flex container">
+        <div class="flex-1 mr-5">
+          <!-- CourseHeader -->
+          <div class="course-header">
+            <div class="course-header__detail">
+              <p class="course-header__label">focus course</p>
+              <div class="course-header__title">Introduction to Vue JS</div>
+
+              <p class="course-header__label">focus course</p>
+              <div class="text-white">1 hrs/week</div>
+            </div>
+
+            <div class="course-header__progress">
+              <div class="m-auto course-header__circle"></div>
+              <div class="mt-5">
+                <span class="course-header__progress_value">50%</span>
+                <span class="course-header__label">Complete</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CourseTab -->
+          <div class="course-tab">
+            <button class="course-tab__item--active course-tab__item">
+              Courses
+            </button>
+
+            <button class="course-tab__item">
+              Tasks
+            </button>
+
+            <button class="course-tab__item">
+              Resources
+            </button>
+          </div>
+
+          <!-- CourseList -->
+          <div class="course-list">
+            <div class="p-3">
+              <button class="ml-auto block primary-filled-button">
+                Continue
+              </button>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">
+                  Lesson 1 - Course Introduction
+                  <span class="course-list__progress">20% Complete</span>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 2 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 3 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 4 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 5 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 6 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 7 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+
+            <div class="course-list__item">
+              <div class="flex items-center">
+                <div class="course-list__icon mdi mdi-play-circle"></div>
+                <div class="ml-2">Lesson 8 - Course Introduction</div>
+              </div>
+              <div class="flex items-center">
+                <div class="course-list__time">00:51:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/4">
+          <div class="profile-progress">
+            <div class="flex justify-between w-full">
+              <span> <strong>70%</strong> of your profile is complete </span>
+              <a target="_blank" href="./profile">Edit</a>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__content"></div>
+            </div>
+          </div>
+          <div class="mt-5 refer">
+            <div class="">
+              <p class="refer__head">
+                Get an <br />Amazon Voucher <br />
+                worth $100
+              </p>
+            </div>
+            <div class="refer__content">
+              <p class="refer__item refer__item--friend">
+                Refer a friend
+              </p>
+              <p class="refer__item refer__item--voucher">
+                You get $100 Voucher
+              </p>
+              <p class="refer__item refer__item--off">
+                Your friend gets 20% off
+              </p>
+              <button class="m-auto mt-5 block primary-filled-button">
+                Invite a Friend
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer mt-10">
+      <div class="text-white bg-black p-5">
+        <div class="container m-auto text-center">
+          Copyright &copy; 2020. Made with ❤️ by Asti Annisa Amalia
+        </div>
+      </div>
+    </section>
+    <section class="footer mt-10">
+      <div class="text-white p-5">
+        <div class="container m-auto text-center">
+          Copyright &copy; 2020. Made with ❤️ by Asti Annisa Amalia
+        </div>
+      </div>
+    </section>
+    <script></script>
+  </body>
+</html>
