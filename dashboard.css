@@ -211,8 +211,8 @@
 
 /* Course List */
 .course-list {
-  background: #ecf0f1;
-  border: 1px solid #d1d4d6;
+  background: #f9f9f9;
+  border: 1px solid #eee;
 }
 
 .course-list__item {
@@ -222,7 +222,7 @@
   padding: 14px;
   cursor: pointer;
   transition: 0.3s;
-  border-top: 1px solid #d2d6d8;
+  border-top: 1px solid #eee;
   user-select: none;
 }
 
@@ -239,7 +239,7 @@
 }
 
 .course-list__item:hover {
-  background: #fafdfd;
+  background: white;
 }
 
 .course-list__item:active {
@@ -329,4 +329,147 @@
 /* Footer */
 .footer {
   background: #34495e;
+}
+
+.footer__title {
+  color: gray;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 11px;
+  padding-bottom: 0;
+}
+
+h5.footer__title {
+  font-size: 18px;
+}
+
+.footer__refer-button {
+  padding: 10px 15px;
+  height: auto;
+  border: 1px solid #777;
+  border-radius: 5px;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0;
+  position: relative;
+  display: flex;
+}
+
+.footer__refer-button.android::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(https://cfs22.simplicdn.net/paperclip/dashboard_v1.svgz);
+  position: relative;
+  left: -5px;
+  background-position: -5px -488px;
+}
+
+.footer__refer-button.ios::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(https://cfs22.simplicdn.net/paperclip/dashboard_v1.svgz);
+  position: relative;
+  background-position: -26px -488px;
+  left: -8px;
+}
+
+.social-share {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-share span {
+  background: url(https://cfs22.simplicdn.net/paperclip/dashboard_v1.svgz)
+    no-repeat;
+  display: block;
+  margin: 7px auto;
+}
+
+.social-share a {
+  color: #ccc;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  background: #353535;
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook span {
+  background-position: -10px -603px;
+  width: 9px;
+  height: 21px;
+}
+
+.twitter span {
+  background-position: -67px -605px;
+  width: 18px;
+  height: 18px;
+}
+
+.youtube span {
+  background-position: -100px -604px;
+  width: 20px;
+  height: 16px;
+}
+
+.linkedin span {
+  background-position: -35px -605px;
+  width: 15px;
+  height: 16px;
+}
+
+.google span {
+  background-position: -134px -604px;
+  width: 17px;
+  height: 19px;
+}
+
+.footer__list li {
+  padding-bottom: 6px;
+  line-height: 15.6px;
+  letter-spacing: 0;
+  font-size: 12px;
+  color: #ccc;
+  text-align: left;
+}
+
+.term-list {
+  display: flex;
+  margin: auto;
+}
+
+.term-list__item {
+  color: #b3b3b3;
+  padding: 0 3px;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.term-list__item::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #b3b3b3;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.footer__copyright {
+  color: gray;
+  font-size: 12px;
 }
